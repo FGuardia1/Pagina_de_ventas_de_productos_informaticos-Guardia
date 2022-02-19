@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Pagina principal</title>
+  </head>
+  <body>
+    <div class="grid-container">
+      <header>
+        <div class="row">
+          <a href="index.html"
+            ><img src="images/logoipsum-logo-50.svg" alt=""
+          /></a>
+          <nav>
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="index.html">Pagina principal</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="productos.html">Productos</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="quienesSomos.html">Quienes Somos</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="contacto.html">Contacto</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="sucursales.html">Sucursales</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="iniciarSesion">
+            <button>Log In</button>
+            <button>Register</button>
+          </div>
+        </div>
+      </header>
+
+      <div class="anuncios">
+        <img src="images/banner-web.png" alt="anuncio" />
+      </div>
+      <div class="sidebar">
+        <section id="seccionPopulares">
+          <div class="secPopular">
+            <div class="container">
+              <h2>Categorias Populares</h2>
+              <ul>
+                <li>Discos SSD</li>
+                <li>Placa Madre</li>
+                <li>Mouse</li>
+                <li>Impresora</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <form>
+          <div class="suscripcion">
+            <div class="container">
+              <h2>
+                <label for="mail"
+                  >Suscribite para recibir nuestras noticias por mail:</label
+                >
+              </h2>
+              <input type="text" name="mail" id="mail" />
+              <input type="submit" value="Suscribirse" />
+              <br />
+            </div>
+          </div>
+        </form>
+      </div>
+      <section id="buscador">
+        <form action="">
+          <div class="buscar">
+            <div class="container">
+              <input type="submit" value="Buscar" />
+              <input type="text" name="buscador" id="buscador" />
+            </div>
+          </div>
+        </form>
+      </section>
+
+      <div class="muestrario">
+        <div class="container">
+          <h2>PCs Armadas-Categorias</h2>
+
+          <div class="gridMuestrario">
+            <div class="container2">
+              <img src="images/pcLV1.jpg" alt="pcOficina" />
+            </div>
+            <div class="container2">
+              <img src="images/pcLV2.jpg" alt="pcBasica" />
+            </div>
+            <div class="container2">
+              <img src="images/pcLV3.jpg" alt="pcAvanzada" />
+            </div>
+            <div class="container2">PC de oficina</div>
+            <div class="container2">PC Gamer basica</div>
+            <div class="container2">PC Gamer Avanzada</div>
+          </div>
+        </div>
+
+        <div class="container">
+          <h2>Productos en oferta</h2>
+          <div class="gridMuestrario">
+            <div class="container2">
+              <img src="images/memoriaRam.png" />
+            </div>
+            <div class="container2">
+              <img src="images/Mouse.png" alt="" />
+            </div>
+            <div class="container2">
+              <img src="images/placaVideo.png" alt="" />
+            </div>
+            <div class="container2">
+              Memoria RAM Patriot 8GB DDR4 3200Mhz Viper Steel-$4720
+            </div>
+            <div class="container2">
+              Mouse Redragon Griffin M607 RGB USB 7200DPI $1730
+            </div>
+            <div class="container2">
+              Placa de Video Powercolor Radeon RX 550 Red Dragon 4GB
+              GDDR5-$35500a
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <h2>Productos destacados</h2>
+          <div class="gridMuestrario">
+            <div class="container2">
+              <img src="images/Mouse.png" alt="" />
+            </div>
+            <div class="container2">
+              <img src="images/memoriaRam.png" alt="" />
+            </div>
+            <div class="container2">
+              <img src="images/placaVideo.png" alt="" />
+            </div>
+            <div class="container2">
+              Mouse Redragon Griffin M607 RGB USB 7200DPI $1730
+            </div>
+            <div class="container2">
+              Memoria RAM Patriot 8GB DDR4 3200Mhz Viper Steel-$4720
+            </div>
+            <div class="container2">
+              Placa de Video Powercolor Radeon RX 550 Red Dragon 4GB
+              GDDR5-$35500a
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="footer-sm">
+          <div class="footer-sm__icons">
+            <h3>Nuestras redes sociales</h3>
+            <div class="socialNetworks">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="footer-bottom__copyright">
+              <div class="col">
+                © Copyright 2022 Empresa, todos los derechos reservados
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

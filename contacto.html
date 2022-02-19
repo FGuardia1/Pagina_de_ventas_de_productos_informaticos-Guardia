@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Contacto</title>
+  </head>
+  <body>
+    <header>
+      <div class="row">
+        <a href="index.html"
+          ><img src="images/logoipsum-logo-50.svg" alt=""
+        /></a>
+        <nav>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="index.html">Pagina principal</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="productos.html">Productos</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="quienesSomos.html">Quienes Somos</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="sucursales.html">Sucursales</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="iniciarSesion">
+          <button>Log In</button>
+          <button>Register</button>
+        </div>
+      </div>
+    </header>
+
+    <div class="formulario">
+      <h1>Contacto</h1>
+      <form action="">
+        <label for="Email">Email:</label>
+        <input type="text" name="mail" id="mail" />
+
+        <label for="">Tipo de mensaje</label>
+        <select name="mensajeTipo" id="mensajeTipo">
+          <option value="Recomendacion">Recomendacion</option>
+          <option value="Queja">Queja</option>
+          <option value="Reembolso">Reembolso</option>
+          <option value="Otro">Otro</option>
+        </select>
+
+        <label for="mensaje">Mensaje:</label>
+
+        <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+
+        Quiero recibir noticias de productos a mi email
+        <input type="checkbox" name="acepta" value="1" />
+
+        <input type="submit" value="Enviar mensaje" />
+        <input type="reset" value="Borrar mensaje" />
+      </form>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-sm">
+        <div class="footer-sm__icons">
+          <h3>Nuestras redes sociales</h3>
+          <div class="socialNetworks">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="footer-bottom__copyright">
+            <div class="col">
+              © Copyright 2022 Empresa, todos los derechos reservados
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
