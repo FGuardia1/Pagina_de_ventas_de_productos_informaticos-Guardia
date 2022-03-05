@@ -16,7 +16,7 @@ body {
 }
 
 #seccionPopulares {
-  color: #3246ff;
+  color: blue;
   -webkit-animation: animacion 2s ease-in-out 2s infinite alternate;
           animation: animacion 2s ease-in-out 2s infinite alternate;
 }
@@ -26,12 +26,12 @@ body {
 }
 
 .container {
-  margin: 1.5rem auto;
+  margin: 1rem auto;
 }
 
 .container img {
-  width: 250px;
   height: 250px;
+  width: 250px;
 }
 
 .container2 {
@@ -204,7 +204,7 @@ section#buscador input[type="text"] {
 }
 
 .row {
-  margin: 1.2rem 0.5;
+  margin: 1rem 0.5rem;
   padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -302,19 +302,7 @@ section#buscador input[type="text"] {
   font-weight: 400;
 }
 
-input[type="button"],
-input[type="submit"],
-input[type="reset"] {
-  background-color: #002cbb;
-  color: white;
-  padding: 12px 32px;
-  text-decoration: none;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 6px;
-}
-
-button {
+button, input[type="button"], input[type="submit"], input[type="reset"] {
   background-color: #002cbb;
   color: white;
   padding: 12px 32px;

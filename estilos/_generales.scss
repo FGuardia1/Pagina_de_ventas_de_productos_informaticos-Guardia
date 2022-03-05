@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+@mixin size_image($width, $height) {
+  height: $height;
+  width: $width;
+}
+
 body {
   font-family: $fuente-body;
   background-color: $color-fondo;
@@ -15,7 +20,11 @@ body {
 }
 
 #seccionPopulares {
-  color: rgb(50, 70, 255);
+  @if $color-fuente-populares == azul {
+    color: blue;
+  } @else {
+    color: white;
+  }
 
   animation: animacion 2s ease-in-out 2s infinite alternate;
 }
@@ -25,16 +34,15 @@ body {
 }
 
 .container {
-  margin: 1.5rem auto;
+  margin: $container-margin auto;
 
   img {
-    width: 250px;
-    height: 250px;
+    @include size_image(250px, 250px);
   }
 }
 
 .container2 {
-  margin: 0.1rem 0.1rem;
+  margin: $container-margin/10 $container-margin/10;
   padding: 0rem 1rem;
   color: #212121;
   font-weight: bold;

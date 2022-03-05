@@ -43,7 +43,7 @@ section#buscador {
 }
 
 .row {
-  margin: 1.2rem 0.5;
+  margin: $row-margin $row-margin/2;
   padding: 1rem;
   display: flex;
   flex-wrap: wrap;
