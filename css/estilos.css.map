@@ -10,7 +10,7 @@
         "../estilos/_botones.scss",
         "../estilos/_tablas.scss",
         "../estilos/_anuncios.scss",
-        "../estilos/animaciones.scss"
+        "../estilos/_animaciones.scss"
     ],
     "names": [],
     "file": "estilos.css"
