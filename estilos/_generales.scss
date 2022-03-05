@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(179, 179, 179);
+  color: rgb(255, 255, 255);
+}
+
+.listaSecciones {
+  color: blue;
+}
+
+#seccionPopulares {
+  color: rgb(50, 70, 255);
+
+  animation: animacion 2s ease-in-out 2s infinite alternate;
+}
+
+.historiaEmpresa {
+  color: rgb(255, 255, 255);
+}
+
+.container {
+  margin: 1.5rem auto;
+
+  img {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+.container2 {
+  margin: 0.1rem 0.1rem;
+  padding: 0rem 1rem;
+  color: #212121;
+  font-weight: bold;
+  text-align: center;
+
+  img:hover {
+    transform: scale(1.1, 1.1);
+  }
+}
+
+.buscar {
+  background-color: rgb(179, 179, 179);
+  padding: 10px;
+}
+
+.secPopular {
+  background-color: rgb(179, 179, 179);
+
+  .container {
+    ul {
+      list-style: none;
+      font-weight: bold;
+    }
+    .suscripcion {
+      background-color: rgb(179, 179, 179);
+    }
+  }
+}
+
+.muestrario {
+  background-color: rgb(179, 179, 179);
+  grid-area: muestrario;
+  padding: 10px;
+}
+
+input[type="text"] {
+  height: 30px;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  padding: 10px 10px;
+  background-color: rgb(138, 138, 138);
+}

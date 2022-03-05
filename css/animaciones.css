@@ -1,0 +1,17 @@
+@-webkit-keyframes animacion {
+  from {
+  }
+  to {
+    -webkit-transform: scale(1.05, 1.05);
+            transform: scale(1.05, 1.05);
+  }
+}
+@keyframes animacion {
+  from {
+  }
+  to {
+    -webkit-transform: scale(1.05, 1.05);
+            transform: scale(1.05, 1.05);
+  }
+}
+/*# sourceMappingURL=animaciones.css.map */

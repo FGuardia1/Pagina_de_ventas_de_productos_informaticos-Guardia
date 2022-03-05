@@ -1,0 +1,32 @@
+header {
+  background: linear-gradient(to right, #4458c9, #061b5e);
+  padding: 0.5rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  grid-area: header;
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__item {
+  margin: 0 0 0 1rem;
+}
+
+.nav__link {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.nav__link:hover,
+.nav__link:focus {
+  opacity: 0.65;
+}
