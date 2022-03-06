@@ -2,19 +2,20 @@
   padding: 0px;
   display: grid;
 
-  grid-template-rows: 0.1fr 0.08fr 0.1fr 1.5fr 0.1fr;
-  grid-template-columns: 80% auto;
+  grid-template-rows: 0.02fr 0.1fr 0.1fr 0.1fr 7fr 0.2fr;
+  grid-template-columns: 100%;
 
   justify-items: stretch;
   align-items: stretch;
   align-content: center;
   justify-content: center;
   grid-template-areas:
-    "header header"
-    "anuncios anuncios"
-    "buscador sidebar"
-    "muestrario sidebar"
-    "footer footer";
+    "header "
+    "anuncios "
+    "sidebar"
+    "buscador "
+    "muestrario "
+    "footer ";
 }
 
 section#buscador {
@@ -26,7 +27,7 @@ section#buscador {
   margin: 10px 10px;
 
   input[type="text"] {
-    width: 600px;
+    width: 250px;
   }
 }
 
@@ -44,12 +45,10 @@ section#buscador {
 
 .gridMuestrario {
   margin: 1rem;
-  display: grid;
-  grid-template-rows: 3fr 0.2fr;
-  grid-template-columns: 2fr 2fr 2fr;
-
-  align-items: center;
-  justify-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .gridQuienesSomos {

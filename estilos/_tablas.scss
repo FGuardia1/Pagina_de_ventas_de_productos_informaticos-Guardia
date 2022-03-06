@@ -1,9 +1,12 @@
 table {
-  border: 2px skyblue;
+  border: 23px rgb(25, 29, 255);
 
   tr {
     td {
       color: rgb(39, 39, 151);
+      ul {
+        list-style: none;
+      }
     }
   }
 }
