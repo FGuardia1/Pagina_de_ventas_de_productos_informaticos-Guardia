@@ -1,4 +1,4 @@
-@media (min-width: 768px) {
+@media (min-width: 1080px) {
   .grid-container {
     padding: 0px;
     display: grid;
@@ -16,6 +16,10 @@
       "buscador sidebar"
       "muestrario sidebar"
       "footer footer";
+  }
+
+  .header {
+    min-height: 99px;
   }
 
   .nav-toggle {

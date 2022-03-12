@@ -16,6 +16,7 @@ body {
 
 #seccionPopulares {
   color: rgb(50, 70, 255);
+  margin: 20px;
 
   animation: animacion 2s ease-in-out 2s infinite alternate;
 }
@@ -29,7 +30,7 @@ body {
 }
 
 .container2 {
-  margin: 0.1rem 0.1rem;
+  margin: 0.5rem 0.5rem;
   padding: 0rem 1rem;
   color: #212121;
   font-weight: bold;
@@ -81,13 +82,28 @@ input[type="text"] {
   grid-area: sidebar;
   padding: 10px 10px;
   background-color: rgb(138, 138, 138);
+  text-align: center;
 }
 
 .productos {
+  padding: 15px;
+  min-height: calc(100vh - 114px - 99px);
   .container {
     table {
       margin-left: auto;
       margin-right: auto;
     }
   }
+}
+
+.horarios {
+  padding: 10px;
+  margin: 10px;
+  font-size: 25px;
+}
+
+.vtaTelefonica {
+  padding: 10px;
+  margin: 10px;
+  font-size: 25px;
 }
