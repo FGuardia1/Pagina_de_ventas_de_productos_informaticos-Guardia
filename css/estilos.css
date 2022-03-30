@@ -8,6 +8,7 @@ body {
   font-family: "Montserrat", sans-serif;
   background-color: #b3b3b3;
   color: white;
+  min-height: calc(100vh - 114px);
 }
 
 .listaSecciones {
@@ -37,6 +38,8 @@ body {
   max-width: 250px;
 }
 .container2 img {
+  margin-left: auto;
+  margin-right: auto;
   max-width: 250px;
   border-radius: 1rem;
   overflow: hidden;
@@ -67,6 +70,7 @@ body {
   background-color: #b3b3b3;
   grid-area: muestrario;
   padding: 10px;
+  text-align: center;
 }
 
 input[type=text] {
@@ -82,11 +86,35 @@ input[type=text] {
 
 .productos {
   padding: 15px;
-  min-height: calc(100vh - 114px - 99px);
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
-.productos .container table {
-  margin-left: auto;
-  margin-right: auto;
+
+.articulo {
+  display: flex;
+  flex: 0 1 300px;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+.articulo img {
+  order: -1;
+  align-self: center;
+  max-width: 250px;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.articulo button {
+  background: black;
+  color: white;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
 }
 
 .horarios {
@@ -99,6 +127,12 @@ input[type=text] {
   padding: 10px;
   margin: 10px;
   font-size: 25px;
+}
+
+h1 {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  text-align: center;
 }
 
 header {
@@ -277,7 +311,6 @@ section#buscador input[type=text] {
   justify-items: center;
   color: white;
   text-align: center;
-  min-height: calc(100vh - 114px - 99px);
 }
 
 .footer {
@@ -367,7 +400,9 @@ table tr td ul {
   .grid-container {
     padding: 0px;
     display: grid;
-    grid-template-rows: 0.1fr 0.08fr 0.1fr 1.5fr 0.1fr;
+    /*
+    grid-template-rows: 0.1fr 0.08fr 0.1fr 1.5fr 0.1fr;*/
+    grid-template-rows: auto auto auto 1.5fr auto;
     grid-template-columns: 80% auto;
     justify-items: stretch;
     align-items: stretch;

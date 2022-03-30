@@ -58,7 +58,7 @@ section#buscador {
   flex-direction: column;
   text-align: justify;
   padding: 1rem;
-  min-height: calc(100vh - 114px - 99px);
+  min-height: calc(100vh - $altura-footer - $altura-header);
 }
 
 .flexSucursal {
@@ -68,5 +68,4 @@ section#buscador {
   justify-items: center;
   color: rgb(255, 255, 255);
   text-align: center;
-  min-height: calc(100vh - 114px - 99px);
 }
