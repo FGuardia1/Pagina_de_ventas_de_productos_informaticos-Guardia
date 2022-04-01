@@ -29,25 +29,35 @@ body {
   margin: 1rem auto;
 }
 
-.container2 {
+.articuloMuestrario {
   margin: 0.5rem 0.5rem;
-  padding: 0rem 1rem;
   color: #212121;
   font-weight: bold;
   text-align: center;
-  max-width: 250px;
+  max-width: 260px;
+  border: 3px solid white;
+  border-radius: 1rem;
 }
-.container2 img {
-  margin-left: auto;
-  margin-right: auto;
+.articuloMuestrario img {
+  align-self: center;
   max-width: 250px;
   border-radius: 1rem;
   overflow: hidden;
   filter: brightness(1.1);
   mix-blend-mode: multiply;
 }
-.container2 img:hover {
+.articuloMuestrario img:hover {
   transform: scale(1.1, 1.1);
+}
+
+.articuloMuestrario__descripcion {
+  color: #212121;
+  font-weight: bold;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
 }
 
 .buscar {
@@ -133,6 +143,22 @@ h1 {
   margin-top: 12px;
   margin-bottom: 12px;
   text-align: center;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+.historiaEmpresa {
+  font-size: 20px;
+}
+
+.mision .container p {
+  font-size: 20px;
+}
+
+.vision .container p {
+  font-size: 20px;
 }
 
 header {
@@ -311,6 +337,7 @@ section#buscador input[type=text] {
   justify-items: center;
   color: white;
   text-align: center;
+  min-height: calc(100vh - 114px - 99px);
 }
 
 .footer {
