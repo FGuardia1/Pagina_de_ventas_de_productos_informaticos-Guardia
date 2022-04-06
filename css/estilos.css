@@ -139,26 +139,36 @@ input[type=text] {
   font-size: 25px;
 }
 
-h1 {
-  margin-top: 12px;
-  margin-bottom: 12px;
+.fundadores {
+  margin: 12px 12px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.fundador__foto {
+  max-height: 250px;
+  border-radius: 50%;
+  border: 5px solid #e2e2e2;
+  margin: 12px;
+}
+
+.fundador__nombre {
+  font-size: 23px;
+}
+
+.parrafo {
+  margin: 20px 20px;
+}
+
+.parrafo__titulo {
+  font-size: 33px;
   text-align: center;
 }
 
-h2 {
-  font-size: 28px;
-}
-
-.historiaEmpresa {
-  font-size: 20px;
-}
-
-.mision .container p {
-  font-size: 20px;
-}
-
-.vision .container p {
-  font-size: 20px;
+.parrafo__texto {
+  margin-top: 10px;
+  font-size: 25px;
+  text-align: justify;
 }
 
 header {
@@ -322,22 +332,24 @@ section#buscador input[type=text] {
   justify-content: space-around;
 }
 
-.gridQuienesSomos {
+.column {
   display: flex;
   flex-direction: column;
   text-align: justify;
+  justify-items: center;
   padding: 1rem;
   min-height: calc(100vh - 114px - 99px);
 }
 
-.flexSucursal {
+.fundadores {
+  margin: 12px 12px;
+}
+
+.fila {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-items: center;
-  color: white;
-  text-align: center;
-  min-height: calc(100vh - 114px - 99px);
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .footer {
@@ -394,19 +406,6 @@ button {
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 6px;
-}
-
-table {
-  border: 2px solid #191dff;
-  border-collapse: collapse;
-}
-table tr td {
-  border: 2px solid #191dff;
-  border-collapse: collapse;
-  color: #2100b6;
-}
-table tr td ul {
-  list-style: none;
 }
 
 .anuncios {

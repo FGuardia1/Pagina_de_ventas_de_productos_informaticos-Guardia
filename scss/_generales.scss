@@ -148,32 +148,31 @@ input[type="text"] {
   font-size: 25px;
 }
 
-h1 {
-  margin-top: 12px;
-  margin-bottom: 12px;
+.fundadores {
+  margin: 12px 12px;
+  text-align: center;
+  font-size: 25px;
+}
+.fundador__foto {
+  max-height: 250px;
+  border-radius: 50%;
+  border: 5px solid rgb(226, 226, 226);
+  margin: 12px;
+}
+.fundador__nombre {
+  font-size: 23px;
+}
+
+.parrafo {
+  margin: 20px 20px;
+}
+.parrafo__titulo {
+  font-size: 33px;
+
   text-align: center;
 }
-
-h2 {
-  font-size: 28px;
-}
-
-.historiaEmpresa {
-  font-size: 20px;
-}
-
-.mision {
-  .container {
-    p {
-      font-size: 20px;
-    }
-  }
-}
-
-.vision {
-  .container {
-    p {
-      font-size: 20px;
-    }
-  }
+.parrafo__texto {
+  margin-top: 10px;
+  font-size: 25px;
+  text-align: justify;
 }
