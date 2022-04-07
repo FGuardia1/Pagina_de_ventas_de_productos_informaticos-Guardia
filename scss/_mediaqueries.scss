@@ -2,8 +2,6 @@
   .grid-container {
     padding: 0px;
     display: grid;
-    /*
-    grid-template-rows: 0.1fr 0.08fr 0.1fr 1.5fr 0.1fr;*/
     grid-template-rows: auto auto auto 1.5fr auto;
     grid-template-columns: 80% auto;
 

@@ -6,20 +6,9 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: rgb(179, 179, 179);
-  color: rgb(255, 255, 255);
+  background-color: $color-fondo;
+  color: $font-color;
   min-height: calc(100vh - $altura-footer);
-}
-
-.listaSecciones {
-  color: blue;
-}
-
-#seccionPopulares {
-  color: rgb(50, 70, 255);
-  margin: 20px;
-
-  animation: animacion 2s ease-in-out 2s infinite alternate;
 }
 
 .historiaEmpresa {
@@ -60,15 +49,17 @@ body {
   font-weight: bold;
   text-align: center;
 }
-a {
-  text-decoration: none;
-}
+
 .buscar {
   background-color: rgb(179, 179, 179);
   padding: 10px;
 }
 
 .secPopular {
+  color: rgb(50, 70, 255);
+  margin: 10px;
+  border-radius: 20px;
+  animation: animacion 2s ease-in-out 2s infinite alternate;
   background-color: rgb(179, 179, 179);
 
   .container {
@@ -117,7 +108,28 @@ input[type="text"] {
   border-radius: 1rem;
   padding: 2rem;
 
-  img {
+  .articulo__nombre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    font-size: 25px;
+    text-decoration: wavy;
+    height: 130px;
+  }
+  .articulo__precio {
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .articulo__caracteristicas {
+    margin: 10px 10px;
+  }
+  .articulo__imagen {
+    margin-bottom: 10px;
     order: -1;
     align-self: center;
     max-width: 250px;
@@ -125,7 +137,7 @@ input[type="text"] {
     overflow: hidden;
   }
 
-  button {
+  .articulo__boton-compra {
     background: black;
     color: white;
     padding: 0.5rem;
@@ -152,27 +164,34 @@ input[type="text"] {
   margin: 12px 12px;
   text-align: center;
   font-size: 25px;
-}
-.fundador__foto {
-  max-height: 250px;
-  border-radius: 50%;
-  border: 5px solid rgb(226, 226, 226);
-  margin: 12px;
-}
-.fundador__nombre {
-  font-size: 23px;
+
+  .fundador__foto {
+    max-height: 250px;
+    border-radius: 50%;
+    border: 5px solid rgb(226, 226, 226);
+    margin: 12px;
+  }
+  .fundador__nombre {
+    font-size: 23px;
+  }
 }
 
 .parrafo {
   margin: 20px 20px;
-}
-.parrafo__titulo {
-  font-size: 33px;
 
-  text-align: center;
+  .parrafo__titulo {
+    font-size: 33px;
+
+    text-align: center;
+  }
+  .parrafo__texto {
+    margin-top: 10px;
+    font-size: 25px;
+    text-align: justify;
+  }
 }
-.parrafo__texto {
-  margin-top: 10px;
-  font-size: 25px;
-  text-align: justify;
+
+.titulo-pagina {
+  text-align: center;
+  margin: 10px;
 }
