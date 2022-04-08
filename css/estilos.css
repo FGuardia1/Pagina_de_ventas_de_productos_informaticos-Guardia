@@ -85,11 +85,11 @@ input[type=text] {
 }
 
 .productos {
-  padding: 15px;
   display: flex;
   justify-content: center;
   gap: 1rem;
   flex-wrap: wrap;
+  padding: 12px;
 }
 
 .articulo {
@@ -100,7 +100,8 @@ input[type=text] {
   border-radius: 1rem;
   padding: 2rem;
 }
-.articulo .articulo__nombre {
+
+.articulo__nombre {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -109,16 +110,19 @@ input[type=text] {
   text-decoration: wavy;
   height: 130px;
 }
-.articulo .articulo__precio {
+
+.articulo__precio {
   font-weight: bold;
   margin-top: 10px;
   text-align: center;
   font-size: 25px;
 }
-.articulo .articulo__caracteristicas {
+
+.articulo__caracteristicas {
   margin: 10px 10px;
 }
-.articulo .articulo__imagen {
+
+.articulo__imagen {
   margin-bottom: 10px;
   order: -1;
   align-self: center;
@@ -126,7 +130,8 @@ input[type=text] {
   border-radius: 1rem;
   overflow: hidden;
 }
-.articulo .articulo__boton-compra {
+
+.articulo__boton-compra {
   background: black;
   color: white;
   padding: 0.5rem;
@@ -153,24 +158,28 @@ input[type=text] {
   text-align: center;
   font-size: 25px;
 }
-.fundadores .fundador__foto {
+
+.fundador__foto {
   max-height: 250px;
   border-radius: 50%;
   border: 5px solid #e2e2e2;
   margin: 12px;
 }
-.fundadores .fundador__nombre {
+
+.fundador__nombre {
   font-size: 23px;
 }
 
 .parrafo {
   margin: 20px 20px;
 }
-.parrafo .parrafo__titulo {
+
+.parrafo__titulo {
   font-size: 33px;
   text-align: center;
 }
-.parrafo .parrafo__texto {
+
+.parrafo__texto {
   margin-top: 10px;
   font-size: 25px;
   text-align: justify;
@@ -178,7 +187,19 @@ input[type=text] {
 
 .titulo-pagina {
   text-align: center;
-  margin: 10px;
+  padding: 10px;
+}
+
+.cuerpoPagProductos {
+  min-height: calc(100vh - 114px - 99px);
+}
+
+.cuerpoPagSucursales {
+  min-height: calc(100vh - 114px - 99px);
+}
+
+.cuerpoPagContacto {
+  min-height: calc(100vh - 114px - 99px);
 }
 
 header {
@@ -309,7 +330,7 @@ a img {
   grid-template-areas: "header " "anuncios " "sidebar" "buscador " "muestrario " "footer ";
 }
 
-section#buscador {
+.buscador {
   grid-area: buscador;
   display: flex;
   flex-direction: row;
@@ -317,7 +338,7 @@ section#buscador {
   align-content: stretch;
   margin: 10px 10px;
 }
-section#buscador input[type=text] {
+.buscador input[type=text] {
   width: 200px;
   height: 35px;
   border-radius: 6px;
@@ -327,19 +348,10 @@ section#buscador input[type=text] {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: calc(100vh - 114px - 99px);
 }
 .contactoForm form {
   display: flex;
   flex-direction: column;
-}
-
-.gridMuestrario {
-  margin: 1rem;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
 }
 
 .column {
@@ -348,10 +360,10 @@ section#buscador input[type=text] {
   text-align: justify;
   justify-items: center;
   padding: 1rem;
-  min-height: calc(100vh - 114px - 99px);
 }
 
 .fila {
+  margin: 1rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -487,16 +499,12 @@ input[type=reset] {
     margin-left: 1rem;
   }
 
-  section#buscador {
-    grid-area: buscador;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: stretch;
-    margin: 10px 10px;
-  }
-  section#buscador input[type=text] {
+  .buscador input[type=text] {
     width: 600px;
+  }
+
+  .cuerpoPagSucursales {
+    min-height: calc(100vh - 114px - 99px);
   }
 }
 

@@ -61,16 +61,13 @@
     margin-left: 1rem;
   }
 
-  section#buscador {
-    grid-area: buscador;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: stretch;
-    margin: 10px 10px;
-
+  .buscador {
     input[type="text"] {
       width: 600px;
     }
+  }
+
+  .cuerpoPagSucursales {
+    min-height: calc(100vh - $altura-footer - $altura-header);
   }
 }

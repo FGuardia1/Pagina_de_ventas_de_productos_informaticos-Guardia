@@ -18,7 +18,7 @@
     "footer ";
 }
 
-section#buscador {
+.buscador {
   grid-area: buscador;
   display: flex;
   flex-direction: row;
@@ -42,15 +42,6 @@ section#buscador {
     display: flex;
     flex-direction: column;
   }
-  min-height: calc(100vh - 114px - 99px);
-}
-
-.gridMuestrario {
-  margin: 1rem;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
 }
 
 .column {
@@ -60,10 +51,10 @@ section#buscador {
 
   justify-items: center;
   padding: 1rem;
-  min-height: calc(100vh - $altura-footer - $altura-header);
 }
 
 .fila {
+  margin: 1rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
