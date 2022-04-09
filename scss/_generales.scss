@@ -47,11 +47,6 @@ body {
   text-align: center;
 }
 
-.buscar {
-  background-color: rgb(179, 179, 179);
-  padding: 10px;
-}
-
 .secPopular {
   color: rgb(50, 70, 255);
   margin: 10px;
@@ -64,8 +59,13 @@ body {
       list-style: none;
       font-weight: bold;
     }
-    .suscripcion {
-      background-color: rgb(179, 179, 179);
+  }
+}
+
+.suscripcion {
+  form {
+    input[type="text"] {
+      height: 30px;
     }
   }
 }
@@ -75,10 +75,6 @@ body {
   grid-area: muestrario;
   padding: 10px;
   text-align: center;
-}
-
-input[type="text"] {
-  height: 30px;
 }
 
 .sidebar {
@@ -192,13 +188,21 @@ input[type="text"] {
   padding: 10px;
 }
 
-.cuerpoPagProductos {
+.cuerpoPagina {
   min-height: calc(100vh - $altura-footer - $altura-header);
 }
 
-.cuerpoPagSucursales {
-  min-height: calc(100vh - $altura-footer - $altura-header);
+.sucursal {
+  text-align: center;
+  margin-bottom: 10px;
 }
-.cuerpoPagContacto {
-  min-height: calc(100vh - $altura-footer - $altura-header);
+
+.sucursal__direccion {
+  padding: 10px;
+}
+
+.sucursal__mapa {
+  width: 300px;
+  height: 350px;
+  border-style: none;
 }

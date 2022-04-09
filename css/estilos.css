@@ -46,11 +46,6 @@ body {
   text-align: center;
 }
 
-.buscar {
-  background-color: #b3b3b3;
-  padding: 10px;
-}
-
 .secPopular {
   color: #3246ff;
   margin: 10px;
@@ -62,8 +57,9 @@ body {
   list-style: none;
   font-weight: bold;
 }
-.secPopular .container .suscripcion {
-  background-color: #b3b3b3;
+
+.suscripcion form input[type=text] {
+  height: 30px;
 }
 
 .muestrario {
@@ -71,10 +67,6 @@ body {
   grid-area: muestrario;
   padding: 10px;
   text-align: center;
-}
-
-input[type=text] {
-  height: 30px;
 }
 
 .sidebar {
@@ -190,16 +182,23 @@ input[type=text] {
   padding: 10px;
 }
 
-.cuerpoPagProductos {
+.cuerpoPagina {
   min-height: calc(100vh - 114px - 99px);
 }
 
-.cuerpoPagSucursales {
-  min-height: calc(100vh - 114px - 99px);
+.sucursal {
+  text-align: center;
+  margin-bottom: 10px;
 }
 
-.cuerpoPagContacto {
-  min-height: calc(100vh - 114px - 99px);
+.sucursal__direccion {
+  padding: 10px;
+}
+
+.sucursal__mapa {
+  width: 300px;
+  height: 350px;
+  border-style: none;
 }
 
 header {
@@ -501,10 +500,6 @@ input[type=reset] {
 
   .buscador input[type=text] {
     width: 600px;
-  }
-
-  .cuerpoPagSucursales {
-    min-height: calc(100vh - 114px - 99px);
   }
 }
 
