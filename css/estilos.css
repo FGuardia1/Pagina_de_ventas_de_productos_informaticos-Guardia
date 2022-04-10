@@ -329,30 +329,6 @@ a img {
   grid-template-areas: "header " "anuncios " "sidebar" "buscador " "muestrario " "footer ";
 }
 
-.buscador {
-  grid-area: buscador;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: stretch;
-  margin: 10px 10px;
-}
-.buscador input[type=text] {
-  width: 200px;
-  height: 35px;
-  border-radius: 6px;
-}
-
-.contactoForm {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.contactoForm form {
-  display: flex;
-  flex-direction: column;
-}
-
 .column {
   display: flex;
   flex-direction: column;
@@ -365,8 +341,15 @@ a img {
   margin: 1rem;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-around;
+}
+
+.fila--wrap {
+  flex-wrap: wrap;
+}
+
+.fila--notwrap {
+  flex-wrap: nowrap;
 }
 
 .footer {
@@ -413,6 +396,7 @@ input[type=reset] {
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 6px;
+  min-height: 43px;
 }
 
 .iniciarSesion__boton {
@@ -423,6 +407,53 @@ input[type=reset] {
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 6px;
+}
+
+.suscripcion form input[type=text] {
+  height: 30px;
+}
+
+.buscador {
+  grid-area: buscador;
+  margin: 10px 10px;
+}
+.buscador input[type=text] {
+  width: 200px;
+  height: 35px;
+  border-radius: 6px;
+}
+
+.contactoForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contactoForm form {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+}
+.contactoForm form label {
+  font-size: 25px;
+}
+.contactoForm form input {
+  height: 30px;
+  font-size: 20px;
+}
+.contactoForm form select {
+  border-radius: 10px;
+  height: 33px;
+  font-size: 25px;
+}
+.contactoForm form textarea {
+  font-size: 20px;
+}
+.contactoForm form input[type=checkbox] {
+  margin-left: 15px;
+  transform: scale(1.8);
+}
+.contactoForm form p {
+  font-size: 20px;
 }
 
 .anuncios {

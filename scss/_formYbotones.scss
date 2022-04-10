@@ -1,0 +1,75 @@
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  background-color: #002cbb;
+  color: white;
+  padding: 12px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 6px;
+  min-height: 43px;
+}
+
+.iniciarSesion__boton {
+  background-color: #002cbb;
+  color: white;
+  padding: 12px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.suscripcion {
+  form {
+    input[type="text"] {
+      height: 30px;
+    }
+  }
+}
+
+.buscador {
+  grid-area: buscador;
+  margin: 10px 10px;
+  input[type="text"] {
+    width: 200px;
+    height: 35px;
+    border-radius: 6px;
+  }
+}
+
+.contactoForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    label {
+      font-size: 25px;
+    }
+    input {
+      height: 30px;
+      font-size: 20px;
+    }
+    select {
+      border-radius: 10px;
+      height: 33px;
+      font-size: 25px;
+    }
+
+    textarea {
+      font-size: 20px;
+    }
+    input[type="checkbox"] {
+      margin-left: 15px;
+      transform: scale(1.8);
+    }
+    p {
+      font-size: 20px;
+    }
+  }
+}

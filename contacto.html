@@ -61,12 +61,13 @@
     </header>
     <div class="cuerpoPagina">
       <h1 class="titulo-pagina">Contactese con nosotros</h1>
+
       <div class="contactoForm">
         <form action="">
           <label for="Email">Email:</label>
-          <input type="text" name="mail" id="mail" />
+          <input type="text" name="mail" id="Email" />
 
-          <label for="">Tipo de mensaje</label>
+          <label for="mensajeTipo">Tipo de mensaje</label>
           <select name="mensajeTipo" id="mensajeTipo">
             <option value="Recomendacion">Recomendacion</option>
             <option value="Queja">Queja</option>
@@ -75,8 +76,10 @@
           </select>
           <label for="mensaje">Mensaje:</label>
           <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
-          Quiero recibir noticias de productos a mi email
-          <input type="checkbox" name="acepta" value="1" />
+          <div class="fila fila--notwrap">
+            <p>Quiero recibir noticias de productos a mi email</p>
+            <input type="checkbox" name="acepta" value="1" />
+          </div>
 
           <input type="submit" value="Enviar mensaje" />
           <input type="reset" value="Borrar mensaje" />
